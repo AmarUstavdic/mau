@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { cn } from '$lib/utils/cn';
-	import { Motion } from 'svelte-motion';
+import { cn } from '$lib/utils/cn';
+import { Motion } from 'svelte-motion';
 
 	export let words: {
 		text: string;
