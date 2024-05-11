@@ -1,11 +1,15 @@
 import { supabase } from "$lib/supabase";
 
-export async function load() {
-  const { data } = await supabase.from("countries").select();
-  return {
-    countries: data ?? [],
-  };
-}
+// export const load = async () => {
+//   let { data: countries, error } = await supabase
+//   .from('countries')
+//   .select('*')
+  
+//   if(error){
+//     return console.error(error)
+//   }
+//   return console.log(countries)
+// }
 
 // make requests to supabase here
           

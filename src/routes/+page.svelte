@@ -3,6 +3,21 @@
 		TypewriterEffect,
 		TypewriterEffectSmooth
 	} from '$lib/components/ui/TypewriterEffect/index';
+  
+  import { supabase } from '$lib/supabase';
+	import { onMount } from 'svelte';
+  
+  onMount(async () => {
+    let { data: users, error } = await supabase
+    .from('users')
+    .select('*')
+  
+  if(error){
+    return console.error(error)
+  }
+  return console.log(users)
+  })
+
 
 	const words = [
 		{
