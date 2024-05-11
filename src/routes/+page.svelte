@@ -1,41 +1,34 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { provider, addressList, initialize, connect, disconnect } from '../lib/metamask';
 
-	interface ConnectInfo {
-		chainId: string;
-	}
+	export let data;
 
-	const getMetaMaskPresent = () => window.ethereum.isMetaMask;
-
-	let provider;
-
-	const handleConnect = async () => {
-		if (window.ethereum) {
-			const res = await window.ethereum.request({ method: 'eth_requestAccounts' });
-
-			console.log(res);
-		}
-	};
-
-	const handleDisconnect = async () => {
-		if (window.ethereum) {
-			await window.ethereum.request({
-				method: 'wallet_revokePermissions',
-				params: [
-					{
-						eth_accounts: {}
-					}
-				]
-			});
-		}
-	};
 
 	onMount(() => {
-		provider = window.ethereum;
-
-		console.log(getMetaMaskPresent());
+		initialize
+	
+	
+		console.log(data);
+	
 	});
+
+	$: {
+		console.log(provider);
+		console.log(addressList);
+	}
+
+
+
 </script>
 
-<button on:click={handleConnect}>Connect</button>
-<button on:click={handleDisconnect}>Disconnect</button>
+<button on:click={connect}>Connect</button>
+<button on:click={disconnect}>Disconnect</button>
+
+{#if addressList}
+	{#each $addressList as walletAddress }
+		<p>{walletAddress}</p>
+	{/each}
+{:else}
+	<p>Not connected</p>
+{/if}
