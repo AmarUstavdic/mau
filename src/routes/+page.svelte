@@ -25,25 +25,18 @@
             >
                 Join now
             </button>
-            <button class="h-10 w-40 rounded-xl border border-black bg-white text-sm text-black">
-                Signup
-            </button>
+        
         </div>
     </section>
 
     <section class="mt-[-2rem]">
-		<BentoGrid className="max-w-6xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"> <!-- Increased max-width and added gap between items -->
+		<BentoGrid className="max-w-6xl max-h-2xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-1"> <!-- Increased max-width and added gap between items -->
 			{#each items as item, i (i)}
 			<BentoGridItem
-				title={item.title}
-				description={item.description}
+				image={item.image}
 				className={i === 3 || i === 6 ? 'md:col-span-2 lg:col-span-1' : 'lg:col-span-1'} 
 			>
-				<div
-					slot="header"
-					class="flex h-full min-h-[10rem] w-full flex-1 rounded-xl bg-gradient-to-br from-blue-200 to-blue-100 dark:from-neutral-800 dark:to-neutral-800"
-				></div> <!-- Increased height of header -->
-				<svelte:component this={item.icon} slot="icon" class="h-8 w-8 text-neutral-500" /> <!-- Increased icon size -->
+				
 			</BentoGridItem>
 			{/each}
 		</BentoGrid>
@@ -99,42 +92,50 @@
 	  {
 		title: 'The Dawn of Innovation',
 		description: 'Explore the birth of groundbreaking ideas and inventions.',
-		icon: ClipboardCopy
+		icon: ClipboardCopy,
+		image: "images/2027.jpg"
 	  },
 	  {
 		title: 'The Dawn of Innovation',
 		description: 'Explore the birth of groundbreaking ideas and inventions.',
-		icon: ClipboardCopy
+		icon: ClipboardCopy,
+		image: "images/fees3.jpg"
 	  },
 	  {
 		title: 'The Dawn of Innovation',
 		description: 'Explore the birth of groundbreaking ideas and inventions.',
-		icon: ClipboardCopy
+		icon: ClipboardCopy,
+		image: "images/crypto2.jpg"
 	  },
 	  {
 		title: 'The Digital Revolution',
 		description: 'Dive into the transformative power of technology.',
-		icon: File
+		icon: File,
+		image: "images/future.jpg"
 	  },
 	  {
 		title: 'The Power of Communication',
 		description: 'Understand the impact of effective communication in our lives.',
-		icon: Table
+		icon: Table,
+		image: "images/hour.jpg"
 	  },
 	  {
 		title: 'The Pursuit of Knowledge',
 		description: 'Join the quest for understanding and enlightenment.',
-		icon: Waves
+		icon: Waves,
+		image: "images/join2.jpg"
 	  },
 	  {
 		title: 'The Joy of Creation',
 		description: 'Experience the thrill of bringing ideas to life.',
-		icon: Box
+		icon: Box,
+		image: "images/maupay.jpg"
 	  },
 	  {
 		title: 'The Spirit of Adventure',
 		description: 'Embark on exciting journeys and thrilling discoveries.',
-		icon: Boxes
+		icon: Boxes,
+		image: "images/mill.jpg"
 	  }
 	];
   </script>
