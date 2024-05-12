@@ -7,9 +7,13 @@
        
 		
         <!-- <TypewriterEffectSmooth {words} /> -->
-		<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10 mt-[-8rem]"> <!-- Increased text size for different screen sizes and added font-bold -->
-			Shop with <span class="text-blue-500 px-2 py-1 rounded-md">Crypto,</span> Skip the Fees:
-		</h1>
+		<div class="text-center">
+			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 mt-[-8rem]"> <!-- Increased text size for different screen sizes and added font-bold -->
+				Shop with <span class="text-blue-500 px-2 py-1 rounded-md">Crypto</span>
+			</h1>
+			<h1 class="text-xl md:text-4xl lg:text-5xl font-bold">Skip the Fees</h1>
+		</div>
+		
 		
 		
 		<p class="text-xl mb-5 text-blue-500 dark:text-blue-500 mt-10">

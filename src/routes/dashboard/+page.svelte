@@ -1,6 +1,6 @@
 <section>
   <div>
-    <h1 class="absolute mt-10 ml-10 text-blue-500 text-6xl font-bold">Welcome User!</h1>
+    <h1 class="absolute mt-10 ml-10 text-blue-500 text-4xl font-bold">Welcome User!</h1>
   </div>
 </section>
 <section>
