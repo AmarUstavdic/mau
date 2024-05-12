@@ -1,16 +1,29 @@
-import { supabase } from "$lib/supabase";
+import type { PageServerLoad } from './$types';
 
-// export const load = async () => {
-//   let { data: countries, error } = await supabase
-//   .from('countries')
-//   .select('*')
-  
-//   if(error){
-//     return console.error(error)
-//   }
-//   return console.log(countries)
-// }
+const getUser = async () => {
+	return 'user';
+};
 
-// make requests to supabase here
-          
+const getTransactions = async () => {
+	// Implementation for getTransactions
+	return 'kdkkdkdk';
+};
 
+const getWallets = async () => {
+	// Implementation for getWallets
+	return 'asdfadsf';
+};
+
+export const load: PageServerLoad = async () => {
+	const [user, transactions, wallets] = await Promise.all([
+		getUser(),
+		getTransactions(),
+		getWallets()
+	]);
+
+	return {
+		user,
+		transactions,
+		wallets
+	};
+};

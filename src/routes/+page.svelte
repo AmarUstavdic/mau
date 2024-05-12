@@ -9,6 +9,25 @@
 	import { ClipboardCopy, File, FileSignature, Table, Waves, Box, Boxes } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 
+  import { onMount } from 'svelte';
+	import { provider, addressList, initialize, connect, disconnect } from '../lib/metamask';
+
+	export let data;
+
+
+	onMount(() => {
+		initialize
+	
+	
+		console.log(data);
+	
+	});
+
+	$: {
+		console.log(provider);
+		console.log(addressList);
+	}
+  
 	const handleLaunchApp = () => {
 		goto('/dashboard');
 	};
