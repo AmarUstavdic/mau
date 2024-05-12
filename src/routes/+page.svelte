@@ -66,48 +66,58 @@
 	let isSkeleton = true;
 
 	const items = [
-		{
-			title: 'The Dawn of Innovation',
-			description: 'Explore the birth of groundbreaking ideas and inventions.',
-			icon: ClipboardCopy
-		},
-		{
-			title: 'The Dawn of Innovation',
-			description: 'Explore the birth of groundbreaking ideas and inventions.',
-			icon: ClipboardCopy
-		},
-		{
-			title: 'The Dawn of Innovation',
-			description: 'Explore the birth of groundbreaking ideas and inventions.',
-			icon: ClipboardCopy
-		},
-		{
-			title: 'The Digital Revolution',
-			description: 'Dive into the transformative power of technology.',
-			icon: File
-		},
-		{
-			title: 'The Power of Communication',
-			description: 'Understand the impact of effective communication in our lives.',
-			icon: Table
-		},
-		{
-			title: 'The Pursuit of Knowledge',
-			description: 'Join the quest for understanding and enlightenment.',
-			icon: Waves
-		},
-		{
-			title: 'The Joy of Creation',
-			description: 'Experience the thrill of bringing ideas to life.',
-			icon: Box
-		},
-		{
-			title: 'The Spirit of Adventure',
-			description: 'Embark on exciting journeys and thrilling discoveries.',
-			icon: Boxes
-		}
+	  {
+		title: 'The Dawn of Innovation',
+		description: 'Explore the birth of groundbreaking ideas and inventions.',
+		icon: ClipboardCopy,
+		image: "images/2027.jpg"
+	  },
+	  {
+		title: 'The Dawn of Innovation',
+		description: 'Explore the birth of groundbreaking ideas and inventions.',
+		icon: ClipboardCopy,
+		image: "images/fees3.jpg"
+	  },
+	  {
+		title: 'The Dawn of Innovation',
+		description: 'Explore the birth of groundbreaking ideas and inventions.',
+		icon: ClipboardCopy,
+		image: "images/crypto2.jpg"
+	  },
+	  {
+		title: 'The Digital Revolution',
+		description: 'Dive into the transformative power of technology.',
+		icon: File,
+		image: "images/future.jpg"
+	  },
+	  {
+		title: 'The Power of Communication',
+		description: 'Understand the impact of effective communication in our lives.',
+		icon: Table,
+		image: "images/hour.jpg"
+	  },
+	  {
+		title: 'The Pursuit of Knowledge',
+		description: 'Join the quest for understanding and enlightenment.',
+		icon: Waves,
+		image: "images/join2.jpg"
+	  },
+	  {
+		title: 'The Joy of Creation',
+		description: 'Experience the thrill of bringing ideas to life.',
+		icon: Box,
+		image: "images/maupay.jpg"
+	  },
+	  {
+		title: 'The Spirit of Adventure',
+		description: 'Embark on exciting journeys and thrilling discoveries.',
+		icon: Boxes,
+		image: "images/mill.jpg"
+	  }
 	];
 </script>
+
+
 
 <div class="bg-white-900 relative">
 	<!-- Added relative class to make positioning easier -->
