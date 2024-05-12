@@ -16,6 +16,7 @@
 	<div>
 		<h1 class="absolute mt-10 ml-10 text-blue-500 text-6xl font-bold">Welcome User!</h1>
 	</div>
+
 </section>
 <section>
 	<div class="mt-40 ml-10">
