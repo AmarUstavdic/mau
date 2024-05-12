@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/supabase-js": "^2.43.1",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.378.0",
 		"svelte-inview": "^4.0.2",
