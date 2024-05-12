@@ -3,11 +3,7 @@
       <div class="flex-1">
         <p class="absolute top-5 left-4 text-blue-500 text-4xl font-bold">MauPay</p>
       </div>
-      <div class="flex-none">
-        <button class="absolute top-5 right-4 h-10 w-40 rounded-xl border border-transparent bg-blue-500 text-sm text-white dark:border-white">
-          Connect wallet
-        </button>
-      </div>
+      
     </section>
     
     <section>
