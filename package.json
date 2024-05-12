@@ -20,6 +20,7 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.19",
+		"chart.js": "^4.4.2",
 		"daisyui": "^4.11.1",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -37,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/supabase-js": "^2.43.1",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.378.0",
 		"svelte-inview": "^4.0.2",
