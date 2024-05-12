@@ -1,4 +1,9 @@
 <script lang="ts">
+  
+  	import {
+		TypewriterEffect,
+		TypewriterEffectSmooth
+	} from '$lib/components/ui/TypewriterEffect/index';
 	import { TypewriterEffectSmooth } from '$lib/components/ui/TypewriterEffect/index';
 	import { BentoGrid, BentoGridItem } from '$lib/components/ui/BentoGrid/index';
 	import { ClipboardCopy, File, FileSignature, Table, Waves, Box, Boxes } from 'lucide-svelte';
@@ -7,6 +12,18 @@
 	const handleLaunchApp = () => {
 		goto('/dashboard');
 	};
+
+	import { supabase } from '$lib/supabase';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		let { data: users, error } = await supabase.from('users').select('*');
+
+		if (error) {
+			return console.error(error);
+		}
+		return;
+	});
 
 	const words = [
 		{
