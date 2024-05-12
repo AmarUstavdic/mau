@@ -1,19 +1,15 @@
 <script>
-  import { user } from '$lib/stores/userStore';
-  import { supabase } from '$lib/supabase';
-  
-  const connect_wallet = () => {
-    console.log($user)
-  }
-  
+	import { addressList, connect } from '$lib/metamask';
+
+	$: {
+		console.log(addressList);
+	}
 </script>
 
-
 <button
-on:click={connect_wallet}
-class="absolute top-4 right-4 h-10 w-40 rounded-xl border border-transparent bg-blue-500 text-sm text-white dark:border-white"
+	on:click={connect}
+	class="absolute top-4 right-4 h-10 w-40 rounded-xl border border-transparent bg-blue-500 text-sm text-white dark:border-white"
 >
-{!$user.logged_in ? 'Connect Wallet' : $user.address}
 </button>
 
 <section>
