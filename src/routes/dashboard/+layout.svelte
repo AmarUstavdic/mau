@@ -1,7 +1,7 @@
 <div class="bg-white-900 relative">
     <section>
       <div class="flex-1">
-        <p class="absolute top-5 left-4 text-blue-500 text-4xl font-bold">MauPay</p>
+        <a class="absolute top-5 left-4 text-blue-500 text-4xl font-bold" href="/">MauPay</a>
       </div>
       
     </section>
