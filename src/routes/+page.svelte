@@ -127,16 +127,6 @@
 		<p class="text-xl mb-5 text-blue-500 dark:text-blue-500 mt-10">
 			Seamlessly Spend Your Digital Assets Anywhere, Anytime
 		</p>
-		<div class="flex flex-col space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-			<button
-				class="h-10 w-40 rounded-xl border border-transparent bg-blue-500 text-sm text-white dark:border-white"
-			>
-				Join now
-			</button>
-			<button class="h-10 w-40 rounded-xl border border-black bg-white text-sm text-black">
-				Signup
-			</button>
-		</div>
 	</section>
 
 	<section class="mt-[-2rem]">
