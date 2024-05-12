@@ -1,23 +1,20 @@
-<script>
+<script lang="ts">
 	import {
 		TypewriterEffect,
 		TypewriterEffectSmooth
 	} from '$lib/components/ui/TypewriterEffect/index';
-  
-  import { supabase } from '$lib/supabase';
-	import { onMount } from 'svelte';
-  
-  onMount(async () => {
-    let { data: users, error } = await supabase
-    .from('users')
-    .select('*')
-  
-  if(error){
-    return console.error(error)
-  }
-  return console.log(users)
-  })
 
+	import { supabase } from '$lib/supabase';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		let { data: users, error } = await supabase.from('users').select('*');
+
+		if (error) {
+			return console.error(error);
+		}
+		return;
+	});
 
 	const words = [
 		{
@@ -38,7 +35,6 @@
 		}
 	];
 </script>
-
 
 <div class="bg-slate-900 min-h-screen">
 	<div class="flex h-[40rem] flex-col items-center justify-center">
