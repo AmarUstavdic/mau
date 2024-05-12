@@ -1,27 +1,14 @@
 <script lang="ts">
-  
-  	import {
+	import {
 		TypewriterEffect,
 		TypewriterEffectSmooth
 	} from '$lib/components/ui/TypewriterEffect/index';
-	import { TypewriterEffectSmooth } from '$lib/components/ui/TypewriterEffect/index';
 	import { BentoGrid, BentoGridItem } from '$lib/components/ui/BentoGrid/index';
 	import { ClipboardCopy, File, FileSignature, Table, Waves, Box, Boxes } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
-
-  import { onMount } from 'svelte';
 	import { provider, addressList, initialize, connect, disconnect } from '../lib/metamask';
 
 	export let data;
-
-
-	onMount(() => {
-		initialize
-	
-	
-		console.log(data);
-	
-	});
 
 	$: {
 		console.log(provider);
@@ -139,16 +126,6 @@
 		<p class="text-xl mb-5 text-blue-500 dark:text-blue-500 mt-10">
 			Seamlessly Spend Your Digital Assets Anywhere, Anytime
 		</p>
-		<div class="flex flex-col space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-			<button
-				class="h-10 w-40 rounded-xl border border-transparent bg-blue-500 text-sm text-white dark:border-white"
-			>
-				Join now
-			</button>
-			<button class="h-10 w-40 rounded-xl border border-black bg-white text-sm text-black">
-				Signup
-			</button>
-		</div>
 	</section>
 
 	<section class="mt-[-2rem]">
